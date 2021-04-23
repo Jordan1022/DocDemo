@@ -29,6 +29,8 @@ export default function ModalParent() {
         {title:'Economy',text:' #|0|# or sweet economy'},
     ];
 
+    let parts = levels[which].text;
+
     const handleOpen = (which) => {                
         setWhich(which);        
         setOpen(true);
@@ -37,24 +39,23 @@ export default function ModalParent() {
         setOpen(false);
     };
 
-    const LevelTitle = () => {
-        let retVal= [];
-        let num = -1;
-        let cnt = 0;
-        levels.forEach(level => {
-            if(cnt == 0){
-                retVal.push(<span>{level}</span>);
-            }
-            else{
-                retVal.push(<span which={num[0]} levels={levels}></span>);
-                retVal.push(<span>{num[1]}</span>);
+    // const LevelTitle = () => {
+    //     let retVal= [];
+    //     let num = -1;
+    //     let cnt = 0;
+    //     levels.forEach(level => {
+    //         if(cnt == 0){
+    //             retVal.push(<span>{level}</span>);
+    //         }
+    //         else{
+    //             retVal.push(<span which={num[0]} levels={levels}></span>);
+    //             retVal.push(<span>{num[1]}</span>);
 
-            }
-            cnt++;
-        });
-        return retVal;
-    }
-    
+    //         }
+    //         cnt++;
+    //     });
+    //     return retVal;
+    // }
     
 
 

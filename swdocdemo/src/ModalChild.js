@@ -59,7 +59,7 @@ export default function ModalParent({which, levels, open, handleClose, handleOpe
                         <p>
                             {makeLinks(which,levels,handleOpen)}
                             <br />
-                            <Button variant="secondary" color="secondary" onClick={() => handleClose() }>
+                            <Button variant="text" color="secondary" onClick={() => handleClose() }>
                                 CLOSE
                             </Button>
                         </p>

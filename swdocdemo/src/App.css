@@ -1,19 +1,91 @@
 .App {
-  text-align: center;
+  text-align: left;
+  max-width: 100%;
+  margin-top: 8%;
+  margin-right: 8%;
+  margin-left: 8%;
+  margin-bottom: 8%
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* .doc {
+  margin-top: 8%;
+  margin-right: 8%;
+  margin-left: 8%;
+  margin-bottom: 8%
+} */
+
+text{
+  margin-right: 0%;
+  margin-left: 0%;
+  display: inline-flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.docTitle {
+  margin-bottom: 5rem;
+}
+
+.colorText {
+  color:blue;
+  cursor: pointer;
+}
+
+.P{
+ margin-bottom: 2%;
+}
+
+Container{
+  width: 100%;
+}
+
+.docBody{
+  width: 100%;
+}
+
+.backArrow{
+  cursor: pointer;
+  float: left;
+  display: block;
+  margin-right: 250px;
+}
+
+/* h1, h3, p, li{
+  text-align: left;
+} */
+
+/* td{
+  text-align: left;
+} */
+
+.customizedben, .defaultben{
+  text-indent: 1%;
+}
+
+/* .otherwise {
+  margin-right: 0rem;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+} */
+
+th{
+  width:20%;
+}
+/* 
+*{
+  
+} */
+
+a, span{
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +94,46 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
+} */
+
+/* .tiptext {
+  color:#069; 
+  cursor:pointer;
+} */
+
+/* .card {
+  width: 350px;
+  font-size: 14px;
+  color: black;
+
+
+  /* bottom: 30px; */
+  /* left: 50%; */
+  /* transform: translateX(-50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body {
+  position: absolute;
+  background-color: rgb(243, 231, 207);
 }
+
+.link-with-preview {
+  position: relative;
+}  */
+
+/* .card img {
+  width: 150px;
+} */
+
+.card-title {
+  font-size: 16px;
+} 
+
+/* LinkPreviewer {
+  margin-left: 0rem;
+  margin-right: 0rem;
+} */
