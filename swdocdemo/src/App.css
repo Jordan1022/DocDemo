@@ -7,7 +7,11 @@
   margin-bottom: 8%
 }
 
-
+/* button{
+  margin-left: 0%;
+  margin-right: 0%;
+  display: inline-block;
+} */
 
 /* .doc {
   margin-top: 8%;
@@ -16,11 +20,11 @@
   margin-bottom: 8%
 } */
 
-text{
+/* text{
   margin-right: 0%;
   margin-left: 0%;
   display: inline-flex;
-}
+} */
 
 .docTitle {
   margin-bottom: 5rem;
@@ -48,6 +52,10 @@ Container{
   float: left;
   display: block;
   margin-right: 250px;
+}
+
+div{
+  display: inline-block;
 }
 
 /* h1, h3, p, li{

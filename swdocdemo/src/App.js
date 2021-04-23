@@ -5,8 +5,6 @@ import './App.css';
 import TextComponent from './TextComponent';
 
 function App() {
-
-  var testing="deployment test"
   
   return (
     <div className="App">

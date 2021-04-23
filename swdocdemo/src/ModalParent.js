@@ -9,14 +9,16 @@ export default function ModalParent() {
     const [open, setOpen] = React.useState(false);        
     const [which, setWhich] = React.useState(0);  
     const useStyles = makeStyles(theme => ({
-        button: {
+        div: {
             background:'none!important',
             border:'none',
             padding:'0!important',
-            color:'#069',
+            color:"blue",
             cursor:'pointer',
-            display: 'inline-block',
-            padding:0
+            marginLeft:"0px",
+            marginRight: "0px",
+            display:"inline"
+
         }
     }));
     const classes = useStyles(); 
@@ -62,9 +64,9 @@ export default function ModalParent() {
     return (
         <div>
             <ModalChild which={which} levels={levels} open={open} handleClose={handleClose} handleOpen={handleOpen} />
-            <Button className={classes.button} variant="text" color="inherit" onClick={() => handleOpen(0)}>
+            <div className={classes.div} variant="text" color="inherit" onClick={() => handleOpen(0)}>
                 Sweet Will
-            </Button>
+            </div>
         </div>
     );
 }
