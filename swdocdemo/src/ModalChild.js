@@ -52,7 +52,8 @@ export default function ModalParent({which, levels, open, handleClose, handleOpe
         let cnt = 0;        
         parts.forEach(part => {
             if (cnt==0)
-                retVal.push(<span>{part}</span>);
+               { retVal.push(<span>{part}</span>);
+                console.log(part);}
             else {           
                 num = part.split("|#");
                 retVal.push(<ModalLink which={num[0]} levels={levels} handleOpen={handleOpen} />);
@@ -60,7 +61,6 @@ export default function ModalParent({which, levels, open, handleClose, handleOpe
             }
             cnt++;
         });   
-        console.log(num[1])
         return retVal;
     }
 

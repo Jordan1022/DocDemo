@@ -13,7 +13,7 @@ export default function TextComponent() {
         <h1 className="docTitle">Sweet Will</h1>
         <div className="P">
           A <ModalParent which={0} text={levels[0].title} /> is used by an <ModalParent which={1} text={levels[1].title} /> of
-          the <LinkPreview />, or simply the <LinkPreview />,
+          the <ModalParent which={3} text={levels[3].title} />, or simply the <ModalParent which={2} text={levels[2].title} />,
           to define their wishes concerning the distribution of their <LinkPreview /> <LinkPreview />,
           or simply <LinkPreview />, upon their death. <LinkPreview /> requires
           each <LinkPreview text="iCitizen" href="#icitizen" /> to <LinkPreview text="explicitly" href="#explicitly" /> define and declare

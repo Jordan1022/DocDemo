@@ -23,15 +23,6 @@ export default function ModalParent({text}) {
         }
     }));
     const classes = useStyles(); 
-    
-    
-
-    // var levels = [
-    //     {title:'Sweet Will',text:" #|1|# is a document #|2|#"},
-    //     {title:'iCitizen',text:' #|2|# an individual of the Sweet Economy'},
-    //     {title:'Economy',text:' #|0|# or sweet economy'},
-    // ];
-
 
     const handleOpen = (which) => {                
         setWhich(which);        
@@ -41,13 +32,10 @@ export default function ModalParent({text}) {
         setOpen(false);
     };
 
-    
-
-
     return (
         <div>
             <ModalChild which={which} levels={levels} open={open} handleClose={handleClose} handleOpen={handleOpen} />
-            <div className={classes.div} variant="text" color="inherit" onClick={() => handleOpen(0)}>
+            <div className={classes.div} variant="text" color="inherit" onClick={() => handleOpen(which) }>
                 {text}
             </div>
         </div>
