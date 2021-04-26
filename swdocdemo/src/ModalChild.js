@@ -36,7 +36,8 @@ export default function ModalParent({which, levels, open, handleClose, handleOpe
                 retVal.push(<span>{num[1]}</span>);
             }
             cnt++;
-        });                
+        });   
+        console.log(num[1])
         return retVal;
     }
 

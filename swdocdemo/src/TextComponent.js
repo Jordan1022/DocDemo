@@ -1,16 +1,18 @@
 import { Link } from "@material-ui/core";
 import React from "react";
 import ModalParent from "./ModalParent";
+import {levels} from "./Levels";
 
 export default function TextComponent() {
     const LinkPreview = () => {
         return null
     }
+    
     return(
         <div className="docBody">
         <h1 className="docTitle">Sweet Will</h1>
         <div className="P">
-          A <ModalParent /> is used by an <LinkPreview /> of
+          A <ModalParent which={0} text={levels[0].title} /> is used by an <ModalParent which={1} text={levels[1].title} /> of
           the <LinkPreview />, or simply the <LinkPreview />,
           to define their wishes concerning the distribution of their <LinkPreview /> <LinkPreview />,
           or simply <LinkPreview />, upon their death. <LinkPreview /> requires
