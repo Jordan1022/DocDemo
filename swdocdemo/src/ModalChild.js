@@ -17,7 +17,30 @@ export default function ModalParent({which, levels, open, handleClose, handleOpe
             backgroundColor: theme.palette.background.paper,
             border: '2px solid #000',
             boxShadow: theme.shadows[5],
-            padding: theme.spacing(2, 4, 3),
+            lineHeight: "1.6",
+            [theme.breakpoints.down("xs")]: {
+                height:150,
+                width: 250,
+                overflow:'auto',
+                padding: theme.spacing(1, 2, 1.5)
+              },
+              [theme.breakpoints.between("sm", "md")]:{
+                height:200,
+                width: 250,
+                overflow:'auto',
+                padding: theme.spacing(1, 2, 1.5)
+              },
+              "@media (min-width: 1280px)": {
+                height:250,
+                width: 350,
+                overflow: 'auto',
+                padding: theme.spacing(2, 4, 3)
+              },
+              position: 'absolute',
+              backgroundColor: theme.palette.background.paper,
+              border: '2px solid #000',
+              overflow:'auto',
+              boxShadow: theme.shadows[5],
         },
     }));
     const classes = useStyles();

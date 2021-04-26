@@ -1,11 +1,11 @@
 import React from "react";
 
 export const levels = [
-    {title:'Sweet Will',text:" #|1|# is a document #|2|#"},
-    {title:'iCitizen',text:' #|2|# an individual of the #|0|#'},
-    {title:'Economy',text:' #|0|# or #|1|#'},
-    // {title:'Sweet Economy',text:" #|3|# testing 44444 #|0|#"},
-    // {title:'iCitizen',text:' #|2|# an individual of the Sweet Economy'},
+    {title:'Sweet Will',text:" means an electronically signed official #|2|# document, either a Default Beneficiary Plan, or a notarized (by an ECONOMY NOTARY) CUStomized Benificiary Plan, in which the TESTATOR, an #|1|#, EXPLICITLY describes and states their decisions as to how their SQUARES should be distributed upon their death. "}, 
+    {title:'iCitizen',text:' means an INDIVIDUAL who joins the #|2|# and has become registered as an iCitizen of the #|2|#, whereupon, an ECONADMIN, who is LICENSED to act as an identity issuer, issues a SWEET Certificate of eBirth and an IPASSPORT to the newly birthed iCitizen. An INDIVIDUAL who is permitted to engage, within the #|2|# BUSINESS ACTIVITES and BUYING and SELLING. An opportunity to become a co-owner in the #|2|# through OWNERSHIP of Sweet SQUARES and enjoy the benefits of the #|2|#.'},
+    {title:'Economy',text:' means the local, national and international alliance of participants; #|1|#, LPENTITIES, and ECOSYSTEMS, based on the open source SWEETBRIDGE Synchronized Commerce Platform that connects participants and ECOSYSTEMS together to provide services, opportunities, resources and value for PARTICIPANTS of the Economy. The SWEETBRIDGE Synchronized Commerce Platform automates and simplifies commerce transactions - BUSINESS ACTIVITIES - using automated contracts, automated accounting, automated risk management, automated settlement and PAYMENT that includes data security and access controls that protect identity, information, claims and proofs, all of which is designed to reduce error and fraud in commerce.'},
+    {title:'Sweet Economy',text:" #|3|# testing 44444 #|0|#"},
+    {title:'Billy Bob',text:' #|2|# an individual of the Sweet Economy'},
     // {title:'Economy',text:' #|0|# or sweet economy'},
     // {title:'Sweet Will',text:" #|1|# is a document #|2|#"},
     // {title:'iCitizen',text:' #|2|# an individual of the Sweet Economy'},
