@@ -4,7 +4,8 @@
   margin-top: 8%;
   margin-right: 8%;
   margin-left: 8%;
-  margin-bottom: 8%
+  margin-bottom: 8%;
+  line-height: 1.6;
 }
 
 /* button{
@@ -20,11 +21,20 @@
   margin-bottom: 8%
 } */
 
-/* text{
-  margin-right: 0%;
-  margin-left: 0%;
-  display: inline-flex;
-} */
+.backArrow{
+  cursor: pointer;
+  float: left;
+  margin-right: 250px;
+}
+
+.modalTitle{
+  float:left;
+  margin-right: 1000px;
+}
+
+span{
+color:black;
+}
 
 .docTitle {
   margin-bottom: 5rem;

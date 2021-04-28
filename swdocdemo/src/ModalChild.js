@@ -6,7 +6,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import Button from '@material-ui/core/Button';
 
-export default function ModalParent({which, levels, open, handleClose, handleOpen}) {    
+export default function ModalChild({which, levels, open, handleClose, handleOpen, makeLinks}) {    
     const useStyles = makeStyles(theme => ({
         modal: {
             display: 'flex',
@@ -37,32 +37,12 @@ export default function ModalParent({which, levels, open, handleClose, handleOpe
                 padding: theme.spacing(2, 4, 3)
               },
               position: 'absolute',
-              backgroundColor: theme.palette.background.paper,
-              border: '2px solid #000',
               overflow:'auto',
-              boxShadow: theme.shadows[5],
         },
     }));
     const classes = useStyles();
 
-    const makeLinks = (which, levels, handleOpen) => {
-        let parts = levels[which].text.split("#|");
-        let retVal = [];
-        let num = -1;
-        let cnt = 0;        
-        parts.forEach(part => {
-            if (cnt==0)
-               { retVal.push(<span>{part}</span>);
-                console.log(part);}
-            else {           
-                num = part.split("|#");
-                retVal.push(<ModalLink which={num[0]} levels={levels} handleOpen={handleOpen} />);
-                retVal.push(<span>{num[1]}</span>);
-            }
-            cnt++;
-        });   
-        return retVal;
-    }
+    
 
     return(
         <Modal
@@ -79,7 +59,13 @@ export default function ModalParent({which, levels, open, handleClose, handleOpe
             >
                 <Fade in={open}>
                     <div className={classes.paper}>
-                        <h2>{levels[which].title}</h2>
+                        <img 
+                        alt="backArrow"
+                        onClick={handleClose}
+                        className="backArrow"
+                        src="arrow_back.svg" 
+                        />   
+                        <h2 className="modalTitle">{levels[which].title}</h2>
                         <p>
                             {makeLinks(which,levels,handleOpen)}
                             <br />
