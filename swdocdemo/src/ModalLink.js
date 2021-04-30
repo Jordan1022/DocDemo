@@ -7,5 +7,5 @@ export default function ModalLink({which, levels, handleOpen}) {
                     which = i;
         if (isNaN(parseInt(which, 10)))
             alert(which + ' not found.');
-    return (<a style={{cursor:"pointer", textDecoration:"underline", color:"blue"}} onClick={(e)=>handleOpen(e,which)}>{levels[which].title}</a>)
+    return (<a style={{cursor:"pointer", color:"blue", display:"inline"}} onClick={(e)=>handleOpen(e,which)}>{levels[which].title}</a>)
 }

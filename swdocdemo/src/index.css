@@ -12,4 +12,11 @@ code {
     monospace;
 }
 
+.P {
+  margin-left: 0rem;
+  margin-right: 0rem;
+  text-align: left;
+  text-align: justify;
+  margin-top:10px;
 
+}

@@ -8,11 +8,7 @@
   line-height: 1.6;
 }
 
-/* button{
-  margin-left: 0%;
-  margin-right: 0%;
-  display: inline-block;
-} */
+
 
 /* .doc {
   margin-top: 8%;
@@ -34,10 +30,19 @@
 
 span{
 color:black;
+margin-top: 20%;
 }
 
 .docTitle {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+}
+
+.P {
+  margin-left: 0rem;
+  margin-right: 0rem;
+  text-align: left;
+  
+
 }
 
 .colorText {
@@ -45,9 +50,7 @@ color:black;
   cursor: pointer;
 }
 
-.P{
- margin-bottom: 2%;
-}
+
 
 Container{
   width: 100%;
@@ -80,6 +83,10 @@ div{
   text-indent: 1%;
 }
 
+ol, ul{
+  display: inline-flex;
+}
+
 /* .otherwise {
   margin-right: 0rem;
 } */
@@ -90,8 +97,8 @@ div{
   }
 } */
 
-th{
-  width:20%;
+table, th, td, tr {
+  border: 1px solid black;
 }
 /* 
 *{
@@ -101,6 +108,8 @@ th{
 a, span{
   margin-left: 0rem;
   margin-right: 0rem;
+  text-align: justify;
+  margin-top: 2%;
 }
 
 /* .App-header {
@@ -154,4 +163,13 @@ a, span{
 /* LinkPreviewer {
   margin-left: 0rem;
   margin-right: 0rem;
+} */
+
+/* .P {
+  margin-left: 0rem;
+  margin-right: 0rem;
+  text-align: left;
+  text-align: justify;
+  margin-top: 10px;
+
 } */

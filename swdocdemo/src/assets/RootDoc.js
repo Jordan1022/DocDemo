@@ -1,13 +1,25 @@
 const text = `
 <style>
-.P {
-    margin-left: 0rem;
-    margin-right: 0rem;
+
+h1{
+    margin-bottom: 0px;
+}
+ol, ul{
     text-align: left;
-    text-align: justify;
+    display: inline;
+}
+.customizedben, .defaultben{
+    text-indent: 1%;
+  }
+ul{
+    text-align: left;
+    display:inline;
 }
 .docBody{
     width: 100%;
+}
+span{
+
 }
 a{
     margin-left: 0rem;
@@ -16,16 +28,14 @@ a{
   th{
     width:20%;
   }
-.table{
-
-}
-table, th, td {
+table, th, td, tr {
     border: 1px solid black;
   }
 </style>
+
 <span class=docBody>
 <h1 class="docTitle">Sweet Will</h1>
-<span class="P">A #|Sweet Will|# is used by an #|iCitizen|# of
+<span class="FirstP">A #|Sweet Will|# is used by an #|iCitizen|# of
           the #|Sweet Economy|#, or simply the #|Economy|#,
           to define their wishes concerning the distribution of their #|owned|# #|Sweet Squares|#,
           or simply #|Squares|#, upon their death. #|iCitizenship|# requires
@@ -34,9 +44,7 @@ table, th, td {
           without an #|executed|# #|Sweet Will|#, and thus does not define and declare their heirs,
           the deceased #|iCitizen's|# #|Squares|# automatically pass to the #|Sweetbridge Foundation|# for
           distribution to the #|poor|#, to enable them, among other things, to become #|iCitizens|#.
-</span>
 
-        <div class="P">
           It is crucial that an #|iCitizen|# completes and maintains their #|Sweet Will|# with up-to-date
           information, because, among other things, a #|Sweet Will|# may not be amended, defined
           or overridden by any other will, legal document, citing or founded upon any #|government|# rule,
@@ -44,25 +52,25 @@ table, th, td {
           outside the #|jurisdiction|# of the #|Economy|#. #|Squares|#, including
           those which are inherited, are a form of a distributed digital property and exist only in
           the virtual #|Economy|#, they do not exist in any other #|jurisdiction|#.
-         </div>
+         </span>
 
-         <div class="P">
+         <span class="3P">
           An #|iCitizen|# may use a #|Sweet Will|# to select and #|execute|# either, <a href="#defbenplan">Default Beneficiary Plan</a>,
           or select, create and #|execute|# a #|Sweet Will|# that is #|explicitly|# defined, according to
           an #|iCitizen's|# <a href="">Customized Beneficiary Plan</a>.
           A #|Sweet Will|#  may be updated at any time.
-        </div>
+        </span>
 
-        <div class="P">
+        <span class="P">
           The <a href="#defbenplan">Default Beneficiary Plan</a> may be selected as an #|iCitizen's|# beneficiary plan when
           applying for a #|Sweet iPassport|#, or simply an #|iPassport|#. On the other hand, if an
          #|iCitizen|# chooses to select a <a href="">Customized Beneficiary Plan</a> then, to be validly #|executed|#,
           this selected plan must be notarized by a #|Sweet Economy Notary|#, or simply #|Economy Notary|#.
           An #|iCitizen|# can locate and contact an #|Economy Notary|# listed on the #|Sweet Economy Notary List|#,
           or via any #|Ecosystem Operator|# and arrange for a virtual, or face-to-face (physical) appointment.
-        </div>
+        </span>
 
-        <div class="P">
+        <span class="P">
           Only #|iCitizens|# may become beneficiaries of a #|Sweet Will|#.  #|LPEntities|#, including not for profits,
           are not permitted to be beneficiaries of any #|Sweet Will|#. To qualify as a #|Sweet Will|# beneficiary,
           and thus inherit bequeathed #|Squares|#, the intended beneficiary must become an #|iCitizen|# and hold
@@ -70,9 +78,9 @@ table, th, td {
           date of the #|iCitizen|# #|testator's|# death to claim their #|Squares|#. If bequeathed #|Squares|# are not
           claimed within the 5-year period those #|Squares|# will automatically be transferred to
           the #|Sweetbridge Foundation|# for distribution to the #|poor|#.
-        </div>
+        </span>
 
-        <div class="P">
+        <span class="P">
           It is the sole responsibility of an #|iCitizen|# #|testator|# to cause their chosen beneficiaries
           to register as #|iCitizens|# prior to their death. It is the sole responsibility of the
           beneficiary to provide proof of death of the #|iCitizen|# #|testator|#, via their
@@ -81,24 +89,24 @@ table, th, td {
           the #|Economy|# or any of its #|Licensed Agents|# be liable for, any failure of
           an #|iCitizens|# in making, keeping up to date and properly executing a #|Sweet Will|#,
           or any failures of a beneficiary to fulfil their applicable responsibilities.
-        </div>
+        </span>
 
-        <div class="P">
+        <span class="P">
 
         <h3>Select the beneficiary plan you desire:</h3>
         <p><a class="defaultben" href="">Default Beneficiary Plan</a></p>
         <p><a class="customizedben" href="">Customized Beneficiary Plan</a></p>
-        </div>
-        <div class="P">
+        </span>
+        <span class="P">
         By executing this #|Sweet Will|# #|you|# (an #|iCitizen|# of the #|Economy|#) are attesting that #|you|# are of #|sound mind|# and are not under any external unwarranted influence or coercion.
-        </div>
-        <div className="P">
+        </span>
+        <span className="P">
         <h3 id="defbenplan">Default beneficiary plan</h3>
         
           The <a href="#defbenplan">Default Beneficiary Plan</a> divides #|your|# #|Sweet Squares|#, or simply #|Squares|#, in the following order, upon #|your|# death, as follows:
-          </div>
+          </span>
 
-          <div>
+          <span class="orderlist1">
           <ol>
             <li>If #|you|# are #|married|#, all of #|your|# #|Squares|# will go to #|your|# #|spouse|#. If #|you|# are not survived by a #|spouse|#; then</li>
             <li>If #|you|# have #|offspring|# #|your|# #|Squares|# will go to #|your|# #|offspring|# by being equally divided between #|your|# #|natural|# and/or #|adopted|# #|children|#. If any of #|your|# #|children|# are deceased but had #|offspring|# the pro rata share of their ancestors’ #|Squares|# will go to their #|children|#. This continues on through the line of descendants through grandchildren, grant grandchildren, etc. until no #|offspring|# are found alive.</li>
@@ -113,13 +121,13 @@ table, th, td {
             </ol></li>
           <li>If no descendants or ancestors than #|your|# #|Squares|# will be transferred to the #|Sweetbridge Foundation|# for distribution to the #|poor|#.</li>
         </ol>
-        </div>
-        <div>
+        </span>
+        <span>
 
         <h3 id="custombenplan">Customized Beneficiary Plan</h3>
-          <div>The customized beneficiary plan uses two tables to define how #|you|# want to distribute #|your|# #|Sweet Squares|#, or simply #|Squares|#, upon your death. The #|Sweet Will|# Beneficiaries by Number allows #|you|# to specify a distribution to be done prior to the distributions by percentage defined in the #|Sweet Will|# Beneficiaries by Percentage.</div>
-          <div>The #|Sweet Will|# Beneficiaries by Number is optional, no beneficiaries are required to be entered in this table. The #|Sweet Will|# Beneficiaries by Percentage table must have at least one entry to create a valid customize beneficiary plan.</div>
-          <div>To create a <a href="#custombenplan">Custom Beneficiary Plan</a> #|you|# are required to:</div>
+          <span>The customized beneficiary plan uses two tables to define how #|you|# want to distribute #|your|# #|Sweet Squares|#, or simply #|Squares|#, upon your death. The #|Sweet Will|# Beneficiaries by Number allows #|you|# to specify a distribution to be done prior to the distributions by percentage defined in the #|Sweet Will|# Beneficiaries by Percentage.</span>
+          <span>The #|Sweet Will|# Beneficiaries by Number is optional, no beneficiaries are required to be entered in this table. The #|Sweet Will|# Beneficiaries by Percentage table must have at least one entry to create a valid customize beneficiary plan.</span>
+          <span>To create a <a href="#custombenplan">Custom Beneficiary Plan</a> #|you|# are required to:</span>
           <ol>
             <li>Fill out any specific amount of #|your|# #|Squares|# #|you|# want to go to beneficiaries in the #|Sweet Will|# Beneficiaries by Number table if any, then
             Note, If #|you|# don’t have any beneficiaries to whom #|you|# want to grant a specific amount of #|your|# Squares simply leave the #|Sweet Will|# Beneficiaries by Number table empty.
@@ -132,9 +140,9 @@ table, th, td {
           </ol>
             Beneficiaries who are also #|iCitizens|# may define their #|own|# #|Sweet Will|#. If a beneficiary has defined their #|own|# #|Sweet Will|# and passes away before the distribution of #|your|# #|Squares|# to that beneficiary under #|your|# #|Sweet Will|#, the beneficiary's #|Squares|# will be divided according to their #|Sweet Will|#. If a beneficiary passes away without a #|Sweet Will|#, their #|Squares|# will be distributed based on the <a href="#defbenplan">Default Beneficiary Plan</a>.
             Once completed #|you|# must have the customized beneficiary plan witnessed by an #|Economy Notary|#, who must witness #|your|# signing of #|your|# #|Sweet Will|#.
-        </div>
+        </span>
 
-        <div>
+        <span>
         <h3>Definitions and Interpretations</h3>
           In this #|Sweet Will|# description document, <a href="#defbenplan">Default Beneficiary Plan</a> and Customized Beneficiary Plan:
         <table class="table">
@@ -378,8 +386,8 @@ table, th, td {
           </tr>
           </thead>
         </table>
-        </div>
-        </div>
+        </span>
+        </span>
         </span>
         `;
 export default text;
