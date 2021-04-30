@@ -1,16 +1,15 @@
 const text = `
 <style>
-div {
+.P {
     margin-left: 0rem;
     margin-right: 0rem;
     text-align: left;
-
+    text-align: justify;
 }
 .docBody{
     width: 100%;
-    text-align:left;
 }
-span{
+a{
     margin-left: 0rem;
     margin-right: 0rem;
   }
@@ -18,16 +17,15 @@ span{
     width:20%;
   }
 .table{
-    margin-top:2%;
+
 }
 table, th, td {
     border: 1px solid black;
   }
 </style>
-<div class=docBody>
+<span class=docBody>
 <h1 class="docTitle">Sweet Will</h1>
-<div class="P">
-          A #|Sweet Will|# is used by an #|iCitizen|# of
+<span class="P">A #|Sweet Will|# is used by an #|iCitizen|# of
           the #|Sweet Economy|#, or simply the #|Economy|#,
           to define their wishes concerning the distribution of their #|owned|# #|Sweet Squares|#,
           or simply #|Squares|#, upon their death. #|iCitizenship|# requires
@@ -36,7 +34,7 @@ table, th, td {
           without an #|executed|# #|Sweet Will|#, and thus does not define and declare their heirs,
           the deceased #|iCitizen's|# #|Squares|# automatically pass to the #|Sweetbridge Foundation|# for
           distribution to the #|poor|#, to enable them, among other things, to become #|iCitizens|#.
-</div>
+</span>
 
         <div class="P">
           It is crucial that an #|iCitizen|# completes and maintains their #|Sweet Will|# with up-to-date
@@ -382,6 +380,6 @@ table, th, td {
         </table>
         </div>
         </div>
-        </div>
+        </span>
         `;
 export default text;
