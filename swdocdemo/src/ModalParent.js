@@ -45,16 +45,21 @@ export default function ModalParent({ text }) {
     setTrack([...track, whichP]);
     e.stopPropagation();
   };
-  const handleClose = () => {
-    if (track.length === 1) {
+  const handleClose = (e) => {
+    if (e) {
+      if (track.length === 1) {
+        setOpen(false);
+        setTrack([]);
+        return;
+      } else {
+        const lastModal = track[track.length - 2];
+        setWhich(lastModal);
+        const newTrack = track.slice(0, track.length - 1);
+        setTrack(newTrack);
+      }
+    } else {
       setOpen(false);
       setTrack([]);
-      return;
-    } else {
-      const lastModal = track[track.length - 2];
-      setWhich(lastModal);
-      const newTrack = track.slice(0, track.length - 1);
-      setTrack(newTrack);
     }
 
     //prevFunction
