@@ -1,7 +1,7 @@
 import { Link } from "@material-ui/core";
 import React from "react";
 import ModalParent from "./ModalParent";
-import {levels} from "./Levels";
+import levels from "./Levels";
 
 export default function TextComponent() {
     const LinkPreview = () => {
@@ -352,8 +352,8 @@ export default function TextComponent() {
             <td>means the <LinkPreview text="iCitizen" href="#icitizen" /> or <LinkPreview text="iCitizens" href="#icitizen" /> being spoken or written to.</td>
           </tr>
           <tr id="your">
-            <th scope="row">Your</th>
-            <td>means belonging or relating to the <LinkPreview text="iCitizen" href="#icitizen" /> or <LinkPreview text="iCitizens" href="#icitizen" /> being spoken or written to.</td>
+            <th scope="row">Your qweqwe</th>
+            <td>means belonging or relating to the <LinkPreview text="iCitizen" href="#icitizen" /> or <LinkPreview text="iCitizens" href="#icitizen" /> being spoken or written to.asdasdasd</td>
           </tr>
           </thead>
         </table>

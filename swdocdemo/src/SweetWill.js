@@ -6,8 +6,8 @@ export default function SweetWill() {
     
     return(
         <>
-        <ModalParent />
-        <TextComponent />
+        {/* <ModalParent />
+        <TextComponent /> */}
         </>
     );
 }

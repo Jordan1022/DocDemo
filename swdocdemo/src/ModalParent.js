@@ -3,7 +3,7 @@ import ModalChild from "./ModalChild";
 import ModalLink from "./ModalLink";
 import PageContent from "./PageContent";
 import { makeStyles } from "@material-ui/core/styles";
-import { levels } from "./Levels";
+import  levels  from "./Levels";
 
 for (let i = 0; i < levels.length; i++) {
   if (levels[i].file != undefined) {
