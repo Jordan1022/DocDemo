@@ -28,16 +28,37 @@ class App extends React.Component {
     this.state = {
       modalText: '',
       wordIndex: null,
-      modalOpen: false
+      modalOpen: false,
+      wordHistory: []
     }
   }
   handleToggle = (text) => {
     if (text) {
       let obj = levels.find(obj => obj.title == text);
+      if (obj) {
+        let wordHistory = this.state.wordHistory
+        wordHistory.push(obj)
+        this.setState({
+          wordIndex: obj,
+          modalOpen: true,
+          wordHistory
+        })
+      }
+    }
+    else {
       this.setState({
-        wordIndex: obj,
-        modalOpen: true,
-
+        modalOpen: !this.state.modalOpen,
+      })
+    }
+  }
+  handleBack = () => {
+    var wordHistoryClone = this.state.wordHistory
+    if (wordHistoryClone.length > 1) {
+      wordHistoryClone.pop()
+      this.setState({
+        wordIndex: wordHistoryClone[wordHistoryClone.length - 1],
+        wordHistory: wordHistoryClone,
+        modalOpen: true
       })
     }
     else {
@@ -45,7 +66,6 @@ class App extends React.Component {
         modalOpen: !this.state.modalOpen,
       })
     }
-
   }
 
   render() {
@@ -54,8 +74,11 @@ class App extends React.Component {
         {this.state.modalOpen &&
           <div>
             <Modal isOpen={this.state.modalOpen} toggle={() => this.handleToggle()} >
-              <ModalHeader>{this.state.wordIndex?.title}</ModalHeader>
+              <ModalHeader> <Button onClick={() => this.handleBack()}>{"<-Back"}</Button>  {this.state.wordIndex?.title}</ModalHeader>
               <ModalBody>
+                <p>
+                  {this.state.wordIndex?.text}
+                </p>
                 <Para handleToggle={(text) => this.handleToggle(text)} text={this.state.wordIndex?.text} />
               </ModalBody>
               <ModalFooter>
