@@ -105,16 +105,18 @@ class App extends React.Component {
           <ol>
             <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[3]} /></li>
             <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[4]} /></li>
-          </ol>
-          <h5><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[5]} /></h5>
-          <ul>
+          
+          <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[5]} /></li>
+          <ol type="a">
             <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[6]} /></li>
             <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[7]} /></li>
             <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[8]} /></li>
             <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[9]} /></li>
             <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[10]} /></li>
-            <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[11]} /></li>
-          </ul>
+          </ol>
+          <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[11]} /></li>
+
+          </ol>
           <h3>Customized Beneficiary Plan</h3>
           <Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[12]} />
           <ol>
@@ -126,7 +128,11 @@ class App extends React.Component {
           <table >
             <tr>
               <th>Adopt / Adopted</th>
-              <td>Means</td>
+              <td>means iCitizens parents who have decided to accept, appropriate, choose, or select, as to adopt a child. An adopted child who has been legally taken by another family to be taken care of as their own child.</td>
+            </tr>
+            <tr>
+              <th>Adopt / Adopted</th>
+              <td>means iCitizens parents who have decided to accept, appropriate, choose, or select, as to adopt a child. An adopted child who has been legally taken by another family to be taken care of as their own child.</td>
             </tr>
           </table>
           <Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[16]} />
