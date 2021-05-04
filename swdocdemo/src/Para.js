@@ -24,7 +24,7 @@ export default class SolrSearchComponent extends Component {
         let temp = allText
         for (let i = 0; i < KeywordsTosearch.length; i++) {
             console.log(String.raw`/\b(\w*` + KeywordsTosearch[i] + String.raw`\w*)\b/g`)
-            temp = reactStringReplace(temp, new RegExp(String.raw`/\b(\w*` + KeywordsTosearch[i] + String.raw`\w*)\b/g`), (match, i) => (
+            temp = reactStringReplace(temp, new RegExp(String.raw`(` + KeywordsTosearch[i] + String.raw`)`,'gi'), (match, i) => (
                 <span onClick={() => this.props.handleToggle(match)} key={i} style={{ color: 'red', cursor: 'pointer' }}>{match}</span>
             ))
         }
