@@ -129,21 +129,16 @@ class App extends React.Component {
           </ol>
           <h3>Definitions and Interpretations</h3>
           <Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[15]} />
-          <table >
+          <table>
             <tr>
               <th>Adopt / Adopted</th>
-              <td>means iCitizens parents who have decided to accept, appropriate, choose, or select, as to adopt a child. An adopted child who has been legally taken by another family to be taken care of as their own child.</td>
+              <td><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[16]} /></td>
             </tr>
             <tr>
               <th>Adopt / Adopted</th>
               <td>means iCitizens parents who have decided to accept, appropriate, choose, or select, as to adopt a child. An adopted child who has been legally taken by another family to be taken care of as their own child.</td>
             </tr>
           </table>
-          <Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[16]} />
-          <Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[17]} />
-          <Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[18]} />
-
-
         </div>
       </>
     );
