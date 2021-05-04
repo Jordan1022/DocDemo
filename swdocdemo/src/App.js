@@ -33,30 +33,34 @@ class App extends React.Component {
     }
   }
   handleToggle = (text) => {
-    if (text) {
-      let obj = levels.find(obj => obj.title == text);
-      if (obj) {
-        let wordHistory = this.state.wordHistory
-        wordHistory.push(obj)
+    this.setState({ modalOpen: false }, () => {
+      if (text) {
+        let obj = levels.find(obj => obj.title == text);
+        if (obj) {
+          let wordHistory = this.state.wordHistory
+          wordHistory.push(obj)
+          this.setState({
+            wordIndex: obj,
+            modalOpen: true,
+            wordHistory
+          })
+        }
+      }
+      else {
         this.setState({
-          wordIndex: obj,
-          modalOpen: true,
-          wordHistory
+          modalOpen: !this.state.modalOpen,
         })
       }
-    }
-    else {
-      this.setState({
-        modalOpen: !this.state.modalOpen,
-      })
-    }
+    })
+
   }
   handleBack = () => {
     var wordHistoryClone = this.state.wordHistory
     if (wordHistoryClone.length > 1) {
       wordHistoryClone.pop()
+      let obj = levels.find(obj => obj.title == wordHistoryClone[wordHistoryClone.length - 1].title);
       this.setState({
-        wordIndex: wordHistoryClone[wordHistoryClone.length - 1],
+        wordIndex: obj,
         wordHistory: wordHistoryClone,
         modalOpen: true
       })
@@ -76,13 +80,13 @@ class App extends React.Component {
             <Modal isOpen={this.state.modalOpen} toggle={() => this.handleToggle()} >
               <ModalHeader> <Button onClick={() => this.handleBack()}>{"<-Back"}</Button>  {this.state.wordIndex?.title}</ModalHeader>
               <ModalBody>
-                {/* <p>
-                  {this.state.wordIndex?.text}
-                </p> */}
-                <Para handleToggle={(text) => this.handleToggle(text)} text={this.state.wordIndex?.text} />
+              
+                {this.state.modalOpen &&
+                  <Para handleToggle={(text) => this.handleToggle(text)} text={this.state.wordIndex?.text} />
+                }
               </ModalBody>
               <ModalFooter>
-                <Button color="secondary" onClick={() => this.handleToggle()}>Close</Button>
+                <Button color="secondary" onClick={() => this.setState({ modalOpen: false })}>Close</Button>
               </ModalFooter>
             </Modal>
           </div>
@@ -105,16 +109,16 @@ class App extends React.Component {
           <ol>
             <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[3]} /></li>
             <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[4]} /></li>
-          
-          <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[5]} /></li>
-          <ol type="a">
-            <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[6]} /></li>
-            <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[7]} /></li>
-            <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[8]} /></li>
-            <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[9]} /></li>
-            <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[10]} /></li>
-          </ol>
-          <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[11]} /></li>
+
+            <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[5]} /></li>
+            <ol type="a">
+              <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[6]} /></li>
+              <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[7]} /></li>
+              <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[8]} /></li>
+              <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[9]} /></li>
+              <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[10]} /></li>
+            </ol>
+            <li><Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[11]} /></li>
 
           </ol>
           <h3>Customized Beneficiary Plan</h3>
@@ -136,6 +140,10 @@ class App extends React.Component {
             </tr>
           </table>
           <Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[16]} />
+          <Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[17]} />
+          <Para handleToggle={(text) => this.handleToggle(text)} text={Paragraphs[18]} />
+
+
         </div>
       </>
     );
