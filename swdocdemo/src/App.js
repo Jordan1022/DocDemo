@@ -77,10 +77,10 @@ class App extends React.Component {
       <>
         {this.state.modalOpen &&
           <div>
-            <Modal isOpen={this.state.modalOpen} toggle={() => this.handleToggle()} >
+            <Modal isOpen={this.state.modalOpen} toggle={() => this.setState({ modalOpen: !this.state.modalOpen })} >
               <ModalHeader> <Button onClick={() => this.handleBack()}>{"<-Back"}</Button>  {this.state.wordIndex?.title}</ModalHeader>
               <ModalBody>
-              
+
                 {this.state.modalOpen &&
                   <Para handleToggle={(text) => this.handleToggle(text)} text={this.state.wordIndex?.text} />
                 }
