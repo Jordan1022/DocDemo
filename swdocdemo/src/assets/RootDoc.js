@@ -1,19 +1,16 @@
 const text = `
 <style>
-
-h1{
-    margin-bottom: 0px;
-}
-ol, ul{
-    text-align: left;
+.FirstP {
+    margin-bottom: 2%;
+  }
+ol{
     display: inline;
 }
 .customizedben, .defaultben{
     text-indent: 1%;
   }
 ul{
-    text-align: left;
-    display:inline;
+    
 }
 .docBody{
     width: 100%;
@@ -22,12 +19,10 @@ span{
 
 }
 a{
-    margin-left: 0rem;
-    margin-right: 0rem;
   }
-  th{
+th{
     width:20%;
-  }
+}
 table, th, td, tr {
     border: 1px solid black;
   }
@@ -43,8 +38,9 @@ table, th, td, tr {
           their beneficiaries, in an #|executed|# #|Sweet Will|#. If an #|iCitizen|# dies
           without an #|executed|# #|Sweet Will|#, and thus does not define and declare their heirs,
           the deceased #|iCitizen's|# #|Squares|# automatically pass to the #|Sweetbridge Foundation|# for
-          distribution to the #|poor|#, to enable them, among other things, to become #|iCitizens|#.
-
+         distribution to the #|poor|#, to enable them, among other things, to become #|iCitizens|#.
+         </span>     
+         <span>
           It is crucial that an #|iCitizen|# completes and maintains their #|Sweet Will|# with up-to-date
           information, because, among other things, a #|Sweet Will|# may not be amended, defined
           or overridden by any other will, legal document, citing or founded upon any #|government|# rule,

@@ -3,7 +3,7 @@ import ModalChild from "./ModalChild";
 import ModalLink from "./ModalLink";
 import PageContent from "./PageContent";
 import { makeStyles } from "@material-ui/core/styles";
-import  levels  from "./Levels";
+
 
 for (let i = 0; i < levels.length; i++) {
   if (levels[i].file != undefined) {
@@ -77,13 +77,13 @@ export default function ModalParent({ text }) {
     let cnt = 0;
     parts.forEach((part) => {
       if (cnt === 0) {
-        retVal.push(<span dangerouslySetInnerHTML={{ __html: part }}></span>);
+        retVal.push(<span id="tld" dangerouslySetInnerHTML={{ __html: part }}></span>);
       } else {
         num = part.split("|#");
         retVal.push(
           <ModalLink which={num[0]} levels={levels} handleOpen={handleOpen} />
         );
-        retVal.push(<span dangerouslySetInnerHTML={{ __html: num[1] }}></span>);
+        retVal.push(<span id="tld" dangerouslySetInnerHTML={{ __html: num[1] }}></span>);
       }
       cnt++;
     });
