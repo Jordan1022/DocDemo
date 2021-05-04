@@ -57,12 +57,16 @@ class App extends React.Component {
   handleBack = () => {
     var wordHistoryClone = this.state.wordHistory
     if (wordHistoryClone.length > 1) {
-      wordHistoryClone.pop()
-      let obj = levels.find(obj => obj.title == wordHistoryClone[wordHistoryClone.length - 1].title);
       this.setState({
-        wordIndex: obj,
-        wordHistory: wordHistoryClone,
-        modalOpen: true
+        modalOpen: false
+      }, () => {
+        wordHistoryClone.pop()
+        let obj = levels.find(obj => obj.title == wordHistoryClone[wordHistoryClone.length - 1].title);
+        this.setState({
+          wordIndex: obj,
+          wordHistory: wordHistoryClone,
+          modalOpen: true
+        })
       })
     }
     else {
@@ -71,6 +75,8 @@ class App extends React.Component {
       })
     }
   }
+
+
 
   render() {
     return (
