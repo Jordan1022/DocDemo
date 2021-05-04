@@ -7,13 +7,7 @@
   margin-bottom: 8%;
   line-height: 1.6;
 }
-#root{
-  width: 100%;
-}
 
-table, th, td {
-  border: 1px solid black;
-}
 
 .modalOverlay{
   position: fixed;
@@ -24,5 +18,3 @@ table, th, td {
 }
 .modalBody{
   width: 50%;
-
-}
