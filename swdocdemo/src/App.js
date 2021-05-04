@@ -76,9 +76,9 @@ class App extends React.Component {
             <Modal isOpen={this.state.modalOpen} toggle={() => this.handleToggle()} >
               <ModalHeader> <Button onClick={() => this.handleBack()}>{"<-Back"}</Button>  {this.state.wordIndex?.title}</ModalHeader>
               <ModalBody>
-                <p>
+                {/* <p>
                   {this.state.wordIndex?.text}
-                </p>
+                </p> */}
                 <Para handleToggle={(text) => this.handleToggle(text)} text={this.state.wordIndex?.text} />
               </ModalBody>
               <ModalFooter>
