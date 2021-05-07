@@ -50,6 +50,8 @@ class App extends React.Component {
       else {
         this.setState({
           modalOpen: !this.state.modalOpen,
+        wordHistory:[]
+
         })
       }
     })
@@ -73,6 +75,7 @@ class App extends React.Component {
     else {
       this.setState({
         modalOpen: !this.state.modalOpen,
+        wordHistory:[]
       })
     }
   }
