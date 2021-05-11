@@ -19,6 +19,15 @@
 
 .modalBody {
   width: 50%;
+  height: 20%;
+}
+
+tr{
+  border: 1px solid black;
+}
+
+th{
+  border: 1px solid black;
 }
 
 /* .fade {
