@@ -20,11 +20,11 @@ export default class SolrSearchComponent extends Component {
         var KeywordsTosearch = levels.map(function (item) {
             return item.title;
         });
-        console.log(KeywordsTosearch, "Levels")
+        // console.log(KeywordsTosearch, "Levels")
         let temp = allText
         for (let i = 0; i < KeywordsTosearch.length; i++) {
-            console.log(String.raw`/\b(\w*` + KeywordsTosearch[i] + String.raw`\w*)\b/gi`)
-            temp = reactStringReplace(temp, new RegExp(String.raw`\b(` + KeywordsTosearch[i] + String.raw`)\b`,'gi'), (match, i) => (
+            // console.log(String.raw`/\b(\w*` + KeywordsTosearch[i] + String.raw`\w*)\b/gi`)
+            temp = reactStringReplace(temp, new RegExp(String.raw`\b(` + KeywordsTosearch[i] + String.raw`)\b`, 'gi'), (match, i) => (
                 <span onClick={() => this.props.handleToggle(match)} key={i} style={{ color: 'blue', cursor: 'pointer' }}>{match}</span>
             ))
         }

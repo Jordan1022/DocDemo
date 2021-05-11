@@ -50,7 +50,7 @@ class App extends React.Component {
       else {
         this.setState({
           modalOpen: !this.state.modalOpen,
-        wordHistory:[]
+          wordHistory: []
 
         })
       }
@@ -75,7 +75,7 @@ class App extends React.Component {
     else {
       this.setState({
         modalOpen: !this.state.modalOpen,
-        wordHistory:[]
+        wordHistory: []
       })
     }
   }
@@ -87,7 +87,7 @@ class App extends React.Component {
       <>
         {this.state.modalOpen &&
           <div>
-            <Modal isOpen={this.state.modalOpen} toggle={() => this.setState({ modalOpen: !this.state.modalOpen, wordHistory: [] })} >
+            <Modal fade={false} isOpen={this.state.modalOpen} toggle={() => this.setState({ modalOpen: !this.state.modalOpen, wordHistory: [] })} >
               <ModalHeader> <Button onClick={() => this.handleBack()}>{"Back"}</Button>  {this.state.wordIndex?.title}</ModalHeader>
               <ModalBody>
 
