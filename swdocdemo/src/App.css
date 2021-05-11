@@ -17,10 +17,9 @@
   background-color: aqua;
 }
 
-.modalBody {
-  width: 50%;
+/* .modalBody {
   height: 50%;
-}
+} */
 
 tr{
   border: 1px solid black;
