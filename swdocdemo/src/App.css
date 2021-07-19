@@ -8,6 +8,77 @@
   line-height: 1.6;
 }
 
+.FirstP {
+  margin-bottom: 2%;
+}
+
+.tld{
+  margin-left: 0%;
+  margin-right: 0px;
+  display:inline;
+  text-align: left;
+}
+
+/* .doc {
+  margin-top: 8%;
+  margin-right: 8%;
+  margin-left: 8%;
+  margin-bottom: 8%
+} */
+
+.backArrow{
+  cursor: pointer;
+  float: left;
+  margin-right: 250px;
+}
+
+.modalTitle{
+  float:left;
+  margin-right: 1000px;
+}
+
+span{
+color:black;
+/* margin-top: 20%; */
+}
+
+.docTitle {
+  margin-bottom: 2rem;
+}
+/* 
+.P {
+  /* margin-left: 0rem;
+  margin-right: 0rem; */
+  /* text-align: left; */
+  
+
+
+
+.colorText {
+  color:blue;
+  cursor: pointer;
+}
+
+
+
+/* Container{
+  /* width: 100%; */
+
+
+/* .docBody{
+  /* width: 10%; */
+
+
+.backArrow{
+  cursor: pointer;
+  float: left;
+  display: block;
+  margin-right: 250px;
+}
+
+/* div{ */
+  /* display: inline-block; */
+
 
 .modalOverlay {
   position: fixed;
@@ -23,6 +94,48 @@
 
 tr{
   border: 1px solid black;
+}
+/* 
+*{
+  
+} */
+
+/* a, span{
+  /* margin-left: 0rem;
+  margin-right: 0rem;
+  text-align: justify;
+  margin-top: 2%; */
+
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+/* .App-link {
+  color: #61dafb;
+} */
+
+/* .tiptext {
+  color:#069; 
+  cursor:pointer;
+} */
+
+/* .card {
+  width: 350px;
+  font-size: 14px;
+  color: black;
+
+
+  /* bottom: 30px; */
+  /* left: 50%; */
+  /* transform: translateX(-50%);
 }
 
 th{
